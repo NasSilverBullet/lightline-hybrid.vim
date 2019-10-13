@@ -17,7 +17,7 @@ endif
 
 let s:mono2   = '#303030'
 let s:mono5   = '#c5c8c6'
-let s:c_mono0 = 234
+let s:gray0 = 234
 let s:c_mono1 = 0
 let s:c_mono2 = 236
 let s:c_mono3 = 8
@@ -50,18 +50,18 @@ let s:style = exists('g:lightline_hybrid_style')
 
 " [[guifg, guibg, ctermfg, ctermbg], ...]
 let s:p.normal.middle = [
-      \ [s:mono3, s:mono4, s:c_mono3, 'NONE']]
+      \ [s:mono3, s:mono4, s:c_mono3, s:gray]]
 let s:p.normal.left = [
-      \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
-      \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+      \ [s:mono0, s:mono4, s:gray, s:c_mono4],
+      \ [s:mono0, s:mono4, s:gray, s:c_mono4]]
 let s:p.normal.right = [
-      \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4],
-      \ [s:mono0, s:mono4, s:c_mono0, s:c_mono4]]
+      \ [s:mono0, s:mono4, s:gray, s:c_mono4],
+      \ [s:mono0, s:mono4, s:gray, s:c_mono4]]
 
 let s:p.normal.error = [
-			\ [s:mono0, s:red, s:c_mono0, s:c_red]]
+			\ [s:mono0, s:red, s:gray, s:c_red]]
 let s:p.normal.warning = [
-			\ [s:mono0, s:orange, s:c_mono0, s:c_orange]]
+			\ [s:mono0, s:orange, s:gray, s:c_orange]]
 
 let s:p.inactive.middle = [
 			\ [s:mono4, s:mono2, s:c_mono4, 'NONE']]
@@ -73,21 +73,21 @@ let s:p.inactive.left = [
 			\ s:p.inactive.middle[0]]
 
 let s:p.insert.left = [
-			\ [s:mono0, s:blue, s:c_mono0, s:c_mono4],
+			\ [s:mono0, s:blue, s:gray, s:c_mono4],
 			\ s:p.normal.left[1]]
 let s:p.replace.left = [
-			\ [s:mono0, s:red, s:c_mono0, s:c_mono4],
+			\ [s:mono0, s:red, s:gray, s:c_mono4],
 			\ s:p.normal.left[1]]
 let s:p.visual.left = [
-			\ [s:mono0, s:orange, s:c_mono0, s:c_mono4],
+			\ [s:mono0, s:orange, s:gray, s:c_mono4],
 			\ s:p.normal.left[1]]
 
 let s:p.tabline.middle = [
-      \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
+      \ [s:mono0, s:mono5, s:gray, 'NONE']]
 let s:p.tabline.right = [
-      \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
+      \ [s:mono0, s:mono5, s:gray, 'NONE']]
 let s:p.tabline.left = [
-      \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
+      \ [s:mono0, s:mono5, s:gray, 'NONE']]
 let s:p.tabline.tabsel = [
       \ [s:mono5, s:mono0, s:gray, 'NONE']]
 
