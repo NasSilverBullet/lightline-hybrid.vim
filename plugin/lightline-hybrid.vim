@@ -33,6 +33,8 @@ let s:c_green  = 10
 let s:c_blue   = 12
 let s:c_orange = 3
 
+let s:off = 251
+let s:gray = 237
 
 let s:p = {
 			\ 'normal':   {},
@@ -87,7 +89,7 @@ let s:p.tabline.right = [
 let s:p.tabline.left = [
       \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
 let s:p.tabline.tabsel = [
-      \ [s:mono5, s:mono0, s:c_mono5, s:c_mono5]]
+      \ [s:mono5, s:mono0, s:gray, 'NONE']]
 
 
 let g:lightline#colorscheme#hybrid#palette = s:p
