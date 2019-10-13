@@ -71,23 +71,23 @@ let s:p.inactive.left = [
 			\ s:p.inactive.middle[0]]
 
 let s:p.insert.left = [
-			\ [s:mono0, s:blue, s:c_mono0, s:c_blue],
+			\ [s:mono0, s:blue, s:c_mono0, s:c_mono4],
 			\ s:p.normal.left[1]]
 let s:p.replace.left = [
-			\ [s:mono0, s:red, s:c_mono0, s:c_red],
+			\ [s:mono0, s:red, s:c_mono0, s:c_mono4],
 			\ s:p.normal.left[1]]
 let s:p.visual.left = [
-			\ [s:mono0, s:orange, s:c_mono0, s:c_orange],
+			\ [s:mono0, s:orange, s:c_mono0, s:c_mono4],
 			\ s:p.normal.left[1]]
 
 let s:p.tabline.middle = [
       \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
 let s:p.tabline.right = [
-      \ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
+      \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
 let s:p.tabline.left = [
-      \ [s:mono0, s:mono5, s:c_mono0, s:c_mono5]]
+      \ [s:mono0, s:mono5, s:c_mono0, 'NONE']]
 let s:p.tabline.tabsel = [
-      \ [s:mono5, s:mono0, s:c_mono5, s:c_mono0]]
+      \ [s:mono5, s:mono0, s:c_mono5, s:c_mono5]]
 
 
 let g:lightline#colorscheme#hybrid#palette = s:p
