@@ -44,7 +44,7 @@ let s:style = exists('g:lightline_hybrid_style')
 
 " [[guifg, guibg, ctermfg, ctermbg], ...]
 let s:p.normal.middle = [
-      \ [s:mono3, s:mono4, s:fox, 'NONE']]
+      \ [s:mono3, s:mono4, s:fox, s:gray]]
 let s:p.normal.left = [
       \ [s:mono0, s:mono4, s:gray, s:fox],
       \ [s:mono0, s:mono4, s:gray, s:fox]]
@@ -58,7 +58,7 @@ let s:p.normal.warning = [
 			\ [s:mono0, s:orange, s:gray, s:c_orange]]
 
 let s:p.inactive.middle = [
-			\ [s:mono4, s:mono2, s:fox, 'NONE']]
+			\ [s:mono4, s:mono2, s:fox, s:gray]]
 let s:p.inactive.right = [
 			\ s:p.inactive.middle[0],
 			\ s:p.inactive.middle[0]]
